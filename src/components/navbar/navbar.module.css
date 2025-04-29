@@ -1,0 +1,41 @@
+
+
+.github_link {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding: 13px 56px;
+    border-radius: 15px;
+    background-color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.github_link:hover p { 
+    color: rgb(202, 202, 202);
+}
+.github_link svg {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width:20px;
+    height: 20px;
+    transform: translate(0px,-50%);
+    cursor: pointer;
+}
+.github_link p {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: white;
+    transform: translate(0px,-50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+
+

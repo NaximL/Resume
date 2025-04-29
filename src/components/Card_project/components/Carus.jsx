@@ -1,14 +1,11 @@
-import { useEffect } from "react";
+import styles from "../card_proj.module.css"
 
 function Carousel({imgs}) {
-  useEffect(() => {
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
-  }, []);
 
   return (
-  <div id="proj_wd">
-    <div id="carus" className="carousel slide">
-      <div className="carousel-inner">
+  <div id={styles.proj_wd}>
+    <div id={`${styles.caris}`} className="carousel slide">
+      <div className={`carousel-inner ${styles.carusel_custom}`}>
         <div className="carousel-item active">
           <img src={imgs[0]} className="d-block w-100" alt="Img" />
         </div>
@@ -22,7 +19,7 @@ function Carousel({imgs}) {
       <button
         className="carousel-control-prev"
         type="button"
-        data-bs-target="#carus"
+        data-bs-target={`#${styles.caris}`}
         data-bs-slide="prev"
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -31,7 +28,7 @@ function Carousel({imgs}) {
       <button
         className="carousel-control-next"
         type="button"
-        data-bs-target="#carus"
+        data-bs-target={`#${styles.caris}`}
         data-bs-slide="next"
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>

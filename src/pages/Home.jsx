@@ -1,10 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect } from 'react';
 import Navigation from '../components/navbar/Navig';
-import Project from '../components/Project';
-import Block from '../components/block';
-import Icon from '../components/icon';
-import Steck from '../components/steck';
+import Project from '../components/Card_project/Project';
+import Block from '../components/Help_componets/block';
+import Icon from '../components/Help_componets/icon';
+import Steck from '../components/Help_componets/steck';
 import About_me from '../components/About_me/About_me';
 
 
@@ -12,17 +12,19 @@ function Home() {
         
 
     useEffect(() => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.3 });
-
-            const elements = document.querySelectorAll('.vis');
-            elements.forEach(element => observer.observe(element));
+        
+        import('bootstrap/dist/js/bootstrap.bundle.min.js');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 })  
+        
+        const elements = document.querySelectorAll('.vis');
+        elements.forEach(element => observer.observe(element));
         
     }, []);
 

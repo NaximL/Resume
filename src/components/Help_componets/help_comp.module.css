@@ -1,0 +1,83 @@
+
+.Steck {
+    position: relative;
+    font-size: 30px;
+    top: 10px;
+    color: var(--color_them_invert);
+}
+
+.Steck::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    border-radius: 15px;
+    width: 1px;
+    top: 0px;
+    right: -15px;
+    background-color: var(--color_them_invert);
+    z-index: 1;
+}
+
+
+.Steck_icon_container {
+    position: relative;
+    left: 100px;
+    top: -35px;
+    width: 100%;
+    height: 65px;
+
+    margin-left: 5px;
+    gap: 15px;
+
+    display: flex;
+}
+
+
+.Steck_icon {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.Steck_icon:hover {
+    transform: scale(1.1);
+}
+
+
+.logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    animation: spin 6s infinite linear;
+}
+
+.logo_container:hover {
+    transform: scale(1.5); 
+}
+.logo_container {
+    
+    z-index: 1;
+    position: relative;
+    top: 10%;
+    left: 55%;
+    width: 500px; 
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform: translate(-50px);
+}
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
