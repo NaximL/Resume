@@ -1,0 +1,717 @@
+
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+body {
+    background-color: var(--color_them) !important;
+    transition: background-color 0.3s ease !important;
+}
+:root {
+    --color_them: white;
+    --color_them_invert: black;
+    --botder_them:rgba(255, 255, 255, 0.2);
+}
+.cards {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(224, 224, 224);
+    border-radius: 20px;
+    left: 150px;
+    top: 200px;
+}
+.vis {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+.vis.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.block {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+}
+
+#Hello_text {
+    color: var(--color_them_invert);
+    font-size: 60px;
+}
+
+.Hello {
+    position: absolute;
+    left: 30%;
+    transform: translate(-50%);
+    top: 35%;
+    width: 500px;
+    z-index: 1;
+}
+.Hello p {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    font-size: 20px;
+    color: var(--color_them_invert);
+    font-weight: normal; 
+    z-index: 1;
+}
+
+.Steck {
+    position: relative;
+    font-size: 30px;
+    top: 10px;
+    color: var(--color_them_invert);
+}
+
+.Steck::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    border-radius: 15px;
+    width: 1px;
+    top: 0px;
+    right: -15px;
+    background-color: var(--color_them_invert);
+    z-index: 1;
+}
+
+
+.Steck_icon_container {
+    position: relative;
+    left: 100px;
+    top: -35px;
+    width: 100%;
+    height: 65px;
+
+    margin-left: 5px;
+    gap: 15px;
+
+    display: flex;
+}
+
+
+.logo-containers {
+    z-index: 1;
+    position: absolute;
+    top: -300px;
+    left: -150px;
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform: translate(-50px);
+}
+.Steck_icon {
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.Steck_icon:hover {
+    transform: scale(1.1);
+}
+
+.logo-container {
+    
+    z-index: 1;
+    position: relative;
+    top: 10%;
+    left: 55%;
+    width: 500px; 
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    transform: translate(-50px);
+}
+
+
+.navbar-brand {
+    font-weight:bold; 
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    animation: spin 6s infinite linear;
+}
+.logo-containers:hover {
+    transform: scale(1.5); 
+
+}
+.logo-container:hover {
+    transform: scale(1.5); 
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.project {
+    width: 80%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  }
+  
+  #proj_wd,#carus {
+    width: 400px;    
+  }
+  .carousel-inner {
+    border-radius: 10px;
+  }
+
+  
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .project p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .project_cont_butt {
+    display: flex;
+    gap: 25px;
+  }
+
+  .project.rev {
+    flex-direction: row-reverse;
+  }
+.About_me {
+    position: absolute;
+    left: 60%;
+    transform: translate(-50%);
+    top: 700px;
+}
+
+.Abo_tit {
+    position: absolute;
+    top: -300px;
+    left: -500px;
+    font-weight: bold;
+}
+.cont_linkedin {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+.active {
+    
+    cursor: pointer;
+}
+.cont_email {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.cont_email::after {
+    content: "Email:";
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -30px;
+    font-weight: bold;
+}
+
+
+.Abo_tet {
+    position: absolute;
+    top: -250px;
+    left: -500px;
+    max-width: 300px;
+}
+
+.Cont {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -100px;
+    font-size: 45px;
+    font-weight: bold;
+
+    z-index: 1;
+}
+
+.menu_phone {
+    position: fixed;
+    transition: transform 0.3s ease; 
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    transform: translate(-100%);
+    background-color: rgba(216, 216, 216, 0.507);
+    z-index: 2;
+}
+
+
+
+
+
+
+.op {
+    position: fixed;
+    transform: translate(-50%);
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#op1 {
+    left: 50%;
+    top: 30%;
+}
+#op2 {
+    left: 50%;
+    top: 40%;
+}
+#op3 {
+    left: 50%;
+    top: 50%;
+}
+#op4 {
+    left: 50%;
+    top: 60%;
+}
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+  }
+.Hello span {
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    font-size: 60px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.Hello span:hover {
+
+    animation: shake 0.3s 3 ease;
+}
+
+.github_link {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    padding: 13px 56px;
+    border-radius: 15px;
+    background-color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+}
+
+.github_link:hover p { 
+    color: rgb(202, 202, 202);
+}
+.github_link svg {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    width:20px;
+    height: 20px;
+    transform: translate(0px,-50%);
+    cursor: pointer;
+}
+.github_link p {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: white;
+    transform: translate(0px,-50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+.darkmode {
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    width: 35px;
+    z-index: 1;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    height: 35px;    
+    display: none;
+    justify-content: center; 
+    align-items: center;  
+    
+
+    img {
+
+        transition: all 0.3s ease;
+
+    cursor: pointer;
+    }
+}
+.darkmode:hover {
+
+    background-color: rgba(128, 128, 128, 0.1);
+}
+.darkmode.action {
+    img {
+transform: rotate(180deg);
+
+    }
+}
+
+
+.Steck_cust {
+    position: relative;
+    font-size: 30px;
+    top: 10px;
+    color: var(--color_them_invert);
+}
+
+.Steck_cust::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    border-radius: 15px;
+    width: 1px;
+    top: 0px;
+    right: -15px;
+    background-color: var(--color_them_invert);
+    z-index: 1;
+}
+
+
+.Steck_icon_container_cust {
+    position: relative;
+    margin-top: -20px;
+    gap: 10px;
+    width: 100%;
+    height: 65px;
+    display: flex;
+}
+
+.Steck_icon_cust {
+    width: 30px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+.Steck_icon_cust:hover {
+    transform: scale(1.1);
+}
+.navbar-brand {
+    font-weight:bold; 
+}
+
+.Github_button {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Github_button img{
+width: 25px;
+transition: all 0.3s ease;
+}
+.Github_button p {
+position: relative;
+top: 37%;
+transform: translateY(-50%);
+transition: all 0.3s ease;
+}
+
+.Github_button:hover p {
+    color: black !important;
+}
+.Github_button:hover img {
+    width: 30px;
+}
+
+.Github_button_dropdown {
+    position: absolute;
+    width: 90px;
+    height: 70px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+    opacity: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    pointer-events: none;
+}
+.Github_button_dropdown::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+.Github_button_dropdown b {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Github_button_dropdown b:hover {
+    color: grey;
+}
+.Github_button_dropdown.vis {   
+    pointer-events: auto;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+.View_button {
+    width: 90px;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.View_button img{
+width: 25px;
+transition: all 0.3s ease;
+}
+.View_button p {
+position: relative;
+top: 37%;
+transform: translateY(-50%);
+transition: all 0.3s ease;
+}
+
+.View_button:hover p {
+    color: black !important;
+}
+.View_button:hover img {
+    width: 30px;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+  }
+  .about-section h3 {
+    font-size: 2rem;
+    margin-top: 160px;
+    margin-bottom: 3rem;
+    color: #222;
+  }
+  .about-section p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  #about_me_contancts {
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+  }
+
+  .contact{    
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .contact:hover p {
+    color: grey !important;
+  }
+  .contact img{
+    width: 30px;
+  }
+
+  .contact p {
+    color: black !important;
+    transition: all 0.3s ease;
+    
+  }
+
+
+@media only screen and (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        width: inherit;
+        margin: 50px 20px;
+    }
+    .darkmode {
+        right: 80px;
+    }
+    .github_link  {
+        right: 85px;
+    }
+    #Hello {
+        font-size: 30px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        top: 200px;
+        width: 300px;
+    }
+    #Hello::after {
+        top: 130px;
+    }
+
+    .Hello {
+        margin: 20px;
+        position: relative;
+        left: inherit;
+        top: inherit;
+        transform:inherit;
+    }
+
+    .Steck_icon_container {
+        flex-wrap: wrap;
+        width: 100%;
+        top: 20px;
+        left: 0px;
+        margin-left: 0px;
+    }
+
+    .Git_dwas {
+        left: 0px;
+        top: 320px;
+    }
+    .logo-container {
+        display: none;
+    }
+
+
+    #tit_pro1 {
+        left: 50%;
+        transform: translate(-50%);
+        top: 5%;
+    }
+
+    #text_pro1 {
+        left: 10px;
+        top: 10%;
+        max-width: 95%;
+    }
+
+    .Titleedw {
+        top: 500px;   
+        z-index: 1;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+    .Abo_tet {
+        position: absolute;
+        top: -100px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+    }
+    .logo-containers {
+        display: none;
+    }
+    .Abo_tit {
+        position: absolute;
+        top: -150px;
+        left: 50%;
+        font-weight: bold;
+        transform: translate(-50%);
+    }
+
+    .About_me {
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+
+    #proj_wd {
+        width: 350px;
+    }
+
+    .block {
+        width: 100%;
+        z-index: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        height: 1000px !important;
+    }
+    #proj_wd, #carus {
+         width: inherit;
+    }
+
+}
