@@ -1,5 +1,6 @@
-import Logo from './img/Logo.svg';
+import Logo from './img/logo.svg';
 import styles from "./help_comp.module.css"
+
 
 const Icon = () => {
     return ( 
