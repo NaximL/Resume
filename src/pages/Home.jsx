@@ -46,7 +46,7 @@ function Home() {
                     description={`A system with a frontend built using React, Bootstrap, and JavaScript, and a backend powered by Express. Implemented request handling, a local database for cards, responsive design, and an emergency help feature: transferring user coordinates to the server and automatically calling an operator through a special library.`}
                     stack={['react','bootstrap','javascript','mongodb',"express","nodejs"]}
                     l={true}
-                    imsf={["https://placehold.co/400x400",'https://placehold.co/400x401','https://placehold.co/401x400']}
+                    imsf={["https://placehold.co/400x400",'https://placehold.co/400x402','https://placehold.co/401x400']}
                 />
 
             </Block>
