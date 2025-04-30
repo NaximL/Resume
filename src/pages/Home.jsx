@@ -14,6 +14,8 @@ function Home() {
     useEffect(() => {
         
         import('bootstrap/dist/js/bootstrap.bundle.min.js');
+
+        
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
