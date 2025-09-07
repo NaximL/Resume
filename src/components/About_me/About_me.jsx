@@ -2,7 +2,7 @@ import Contacts from "./components/contacts";
 import styles from "./about_me.module.css"
 const About_me = () => {
     return (
-      <div className={`${styles.aboutsection} vis`}>
+      <div id="AboutMe" className={`${styles.aboutsection} vis`}>
         <h2>About Me 👨‍💻</h2>
 
         <p>

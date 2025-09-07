@@ -1,7 +1,6 @@
 
+const Block = ({ children, id, style }) => (
+  <div className='block vis' style={style} id={id}>{children}</div>
+);
 
-const Block = ({children ,id}) => (
-    <div className='block vis' id={id}>{children}</div>
-  );
-  
 export default Block;

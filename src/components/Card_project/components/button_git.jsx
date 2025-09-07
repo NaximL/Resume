@@ -3,16 +3,16 @@ import styles from "../card_proj.module.css"
 
 const Button_git = ({urls}) => {
     
-    const [state,useStates] = useState(false)
+    const [state,setStates] = useState(false)
     const drop = useRef(null)
     const change = () =>{
         if (state) {
             drop.current.classList.remove(styles.vis)
-            useStates(!state)
+            setStates(!state)
         }
         else {
             drop.current.classList.add(styles.vis)
-            useStates(!state)
+            setStates(!state)
         }
     }
     return ( 

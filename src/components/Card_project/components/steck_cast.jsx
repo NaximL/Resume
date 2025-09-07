@@ -9,7 +9,6 @@ const Steck_cust = ({arr}) => {
                 {arr.map((tech,index)=>(
                     <img key={index} className={styles.Steck_icon_cust} src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech}/${tech}-original.svg`} alt={tech} />
                 ))}
-                
                
             </div>
 
