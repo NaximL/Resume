@@ -1,4 +1,4 @@
-import styles from "../about_me.module.css"
+import styles from "../AboutMe.module.css"
 
 const Contact = ({title,url,href}) => {
     return ( 

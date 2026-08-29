@@ -1,6 +1,6 @@
 
 const Block = ({ children, id, style }) => (
-  <div className='block vis' style={style} id={id}>{children}</div>
+  <section className='block' style={style} id={id}>{children}</section>
 );
 
 export default Block;

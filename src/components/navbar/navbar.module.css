@@ -11,7 +11,7 @@
     gap:5px;
 }
 
-.github_link:hover p { 
+.github_link:hover span { 
     color: rgb(202, 202, 202);
 }
 .github_link svg {
@@ -20,17 +20,20 @@
     cursor: pointer;
 }
 .github_link span {
-    font-weight: 500;
+    font-weight: 700;
     color: white;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
+
+
+
 .NavEl {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+
     transition: all 0.3s ease-in-out;
 }
 
@@ -42,10 +45,10 @@
     background-color: rgb(248, 249, 250,0.9);
     backdrop-filter: blur(5px);
     display: flex;
-    padding-top: 10px;
     padding-inline: 15px;
     align-items: center;
     justify-content: space-between;
+    padding-top: 7px;
 }
 
 .logo_container {
@@ -100,14 +103,6 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
+    padding-top: 7px;
+
 }
-
-.SingUp {
-    padding: 8px 11px;
-    background-color: rgb(247, 247, 247);
-    border-radius: 5px;
-    color: rgb(0, 0, 0) !important;
-    cursor: pointer;
-}
-
-

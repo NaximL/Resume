@@ -6,15 +6,19 @@ const Navigation = () => {
 
 
   const menu = [
-    { text: 'Start', link: '#' },
-    { text: 'Projects', link: '#project-1' },
+    { text: 'Home', link: '#' },
     { text: 'About me', link: '#AboutMe' },
+    { text: 'Projects', link: '#Projects' },
+    { text: 'Contact', link: '#Contact' },
+
   ];
+
+  
 
   return (
     <nav className={styles.NavBar}>
       <a className={styles.LogoRow}>
-        <h2 className={styles.title}>Resume</h2>
+        <h2 className={styles.title}>Maxim.dev</h2>
       </a>
 
       <div className={styles.ElementsRow}>
@@ -24,7 +28,6 @@ const Navigation = () => {
             <NavEL key={index} text={item.text} href={item.link} />
           ))
         }
-
 
         <a href="https://github.com/NaximL" className={styles.github_link}>
           <svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">

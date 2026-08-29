@@ -1,12 +1,12 @@
-import styles from "../card_proj.module.css"
-import Button_git from "./button_git";
-import Button_view from "./button_view";
+import styles from "../card.module.css"
+import Button_git from "./ButtonGit";
+import Button_view from "./ButtonView";
 
 const Floter = () => {
     return ( 
     <>
 
-        <div className={styles.project_cont_butt}>
+        <div className={styles.ProjectFooter}>
           <Button_git urls={["https://github.com/NaximL/Krok_do_phs","https://github.com/NaximL/krok_server"]}/>
           <Button_view url={"https://krok-do-phs.vercel.app/"}/>
         </div>

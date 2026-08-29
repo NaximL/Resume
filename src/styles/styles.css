@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto", sans-serif;
+    font-family: "Mulish", sans-serif;
 }
 
 
@@ -8,9 +8,7 @@
     --color_them: white;
     --color_them_invert: black;
     --botder_them: rgba(255, 255, 255, 0.2);
-
     --color-text: rgba(0, 0, 0, 0.87);
-
 }
 
 body {
@@ -18,9 +16,54 @@ body {
     scroll-behavior: smooth;
 }
 
-[id^="project-"] {
-    scroll-margin-top: 20vh;
+
+
+
+.TitleMini {
+    color: #147efb;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
 }
+
+
+.TitleContainer {
+    display: flex;
+    gap: 5rem;
+    margin-inline: 20px;
+}
+
+.TitleCont {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.TitleContainer h2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.TitleContainer p {
+    color: #555;
+    font-weight: 500;
+}
+
+
+
+#AboutMe {
+    scroll-margin-top: 25vh;
+}
+
+#Projects {
+    scroll-margin-top: 10vh;
+}
+
 
 .block {
     display: flex;
@@ -117,6 +160,39 @@ a {
     flex-direction: column;
     gap: 10rem;
 }
+
+
+
+.TitleMini {
+    color: #147efb;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+}
+
+.TitleContainers h2 {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+
+}
+
+
+
+.ProjectsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     .project {

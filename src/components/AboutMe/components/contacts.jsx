@@ -1,5 +1,5 @@
 import Contact from "./contact"; 
-import styles from "../about_me.module.css"
+import styles from "../AboutMe.module.css"
 
 const Contacts = () => {
     return (        

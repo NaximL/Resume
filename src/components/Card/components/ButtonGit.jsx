@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import styles from "../card_proj.module.css"
+import styles from "../card.module.css"
 
 const Button_git = ({urls}) => {
     

@@ -1,4 +1,4 @@
-import styles from "../card_proj.module.css"
+import styles from "../card.module.css"
 
 const Steck_cust = ({arr}) => {
     

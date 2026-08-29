@@ -1,4 +1,4 @@
-import Logo from './img/logo.svg';
+import Logo from '../../assets/img/logo.svg';
 import styles from "./help_comp.module.css"
 
 
